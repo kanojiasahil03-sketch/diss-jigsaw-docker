@@ -18,3 +18,4 @@ models/*.zip
 
 # macOS junk file — irrelevant on Linux but good practice
 .DS_Store
+build.log
