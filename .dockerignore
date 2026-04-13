@@ -1,0 +1,27 @@
+# Python compiled files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+diss_env/
+venv/
+.venv/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# TensorBoard logs — large, generated at runtime
+tb_logs/
+
+# Trained models — large binaries
+models/*.zip
+
+# Git history — Docker doesn't need this
+.git/
+.gitignore
+
+# VS Code settings
+.vscode/
+
+# macOS
+.DS_Store

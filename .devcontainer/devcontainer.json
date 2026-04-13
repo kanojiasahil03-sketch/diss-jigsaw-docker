@@ -1,0 +1,32 @@
+{
+  "name": "Jigsaw RL — MSc Dissertation",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": ".."
+  },
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.pylance",
+        "ms-python.debugpy",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.tensorboard",
+        "eamodio.gitlens"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "editor.formatOnSave": true,
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  },
+  "forwardPorts": [6006, 8888],
+  "containerEnv": {
+    "PYTHONPATH": "/workspace",
+    "PYTHONUNBUFFERED": "1"
+  },
+  "postCreateCommand": "echo '✅ Container ready.'"
+}
